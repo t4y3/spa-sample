@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "run-p watch server",
+    "precommit": "lint-staged",
     "watch": "rollup -c -w",
     "lint": "run-p lint:*",
     "lint:js": "eslint src",

@@ -20,7 +20,7 @@ export default {
             Promise.all([
               // store.action(actions.ACCOUNT_CHECK_SIGNINED),
               // store.action(actions.APPLICATION_GET_CONFIG)
-            ]).catch((err) => store.action(actions.LOG_ERROR, err))
+            ]).catch(/*(err) => store.action(actions.LOG_ERROR, err)*/)
           )
           .onBefore(() => {
             Promise.all([
@@ -64,19 +64,19 @@ export default {
               rankingRoute.onAfter(store, route);
             }
           )
-          // 開発用ページ
-          .on(
-            '/debug',
-            (route) => DebugRoute.onEnter(store, route),
-            (route, replace) => DebugRoute.onBefore(store, route, replace)
-          )
+          // // 開発用ページ
+          // .on(
+          //   '/debug',
+          //   (route) => DebugRoute.onEnter(store, route),
+          //   (route, replace) => DebugRoute.onBefore(store, route, replace)
+          // )
           .on(
             '*',
             () => {
               Promise.resolve();
             },
             (route, replace) => {
-              NotfoundRoute.onBefore(store, route, replace);
+              // NotfoundRoute.onBefore(store, route, replace);
             }
           )
           .onAfter(() => {
