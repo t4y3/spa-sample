@@ -1,0 +1,13 @@
+spa-menu {
+  background-color: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+
+  & p {
+    flex: 1;
+    text-align: center;
+  }
+}
