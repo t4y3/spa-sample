@@ -31,10 +31,6 @@ import postcssFlexibility from 'postcss-flexibility';
 * ルーティング
 * riot の動作確認
 
-## 開発時に改修したい
-
-* c 環境上で submodules をビルドするようにする
-* 媒体側で commit + push は時間がかかるしコンフリクトとかが面倒くさそう
 
 ### css
 
@@ -43,7 +39,7 @@ import postcssFlexibility from 'postcss-flexibility';
 * セレクタの使用はなし！
 * 必ず、tag > .aaa に対して当てるようにする
 
-## spa-sample で確認してもらうところ
+## 確認
 
 * [ ]ストア周りの設計
 * [ ]formatter のタイミング
@@ -51,5 +47,5 @@ import postcssFlexibility from 'postcss-flexibility';
   * コアな機能部分を一旦当てる
   * 見た目部分は使用とデザインによるため
 * [ ]css の命名ルール
-* [ ]eslint の設定(共有)
-* [ ]stylelint の設定(共有)
+* [ ]eslint の設定
+* [ ]stylelint の設定
